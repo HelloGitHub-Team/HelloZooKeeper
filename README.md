@@ -1,2 +1,2 @@
-# HelloZookeeper
-友好的 Zookeeper 讲解教程
+# HelloZooKeeper
+友好的 ZooKeeper 讲解教程
