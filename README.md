@@ -26,6 +26,7 @@ HelloZooKeeper 内容涵盖**最基础的安装使用**到背后**原理和源�
 首发于「HelloGitHub」公众号
 
 0. [开篇：免费开源的趣讲 ZooKeeper 教程](/content/0/content.md)
+1. [ZooKeeper 介绍与安装](/content/1/content.md)
 
 
 本项目是由 HelloGitHub 推出的『讲解开源项目』系列，**未经授权请勿私自转载**。
@@ -39,7 +40,7 @@ HelloZooKeeper 内容涵盖**最基础的安装使用**到背后**原理和源�
 
 
 
-  
+
 
 
 
