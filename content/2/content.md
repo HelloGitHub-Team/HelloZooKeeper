@@ -1,10 +1,13 @@
 # 坐下坐下，基本操作
+<img src="https://cdn.jsdelivr.net/gh/HelloGitHub-Team/HelloZooKeeper@main/cover.png"/>
+
+<p align="center">本文作者：HelloGitHub-<strong>老荀</strong></p>
 
 Hi，这里是 HelloGitHub 推出的 HelloZooKeeper 系列，**免费开源、有趣、入门级的 ZooKeeper 教程**，面向有编程基础的新手。
 
 > ZooKeeper 是 Apache 软件基金会的一个软件项目，它为大型分布式计算提供开源的分布式配置服务、同步服务和命名注册。 ZooKeeper 曾经是 Hadoop 的一个子项目，但现在是一个顶级独立的开源项目。
 
-ZK 在实际开发工作中经常会用见到，算的上是吃饭的家伙了，那可得玩透、用的趁手，要不怎么进阶和升职加薪呢？来和 HelloGitHub 一起学起来吧～
+ZK 在实际开发工作中经常会用到，算的上是吃饭的家伙了，那可得玩透、用的趁手，要不怎么进阶和升职加薪呢？来和 HelloGitHub 一起学起来吧～
 
 本系列教程是**从零开始**讲解 ZooKeeper，内容从**最基础的安装使用到背后原理和源码的讲解**，整个系列希望通过有趣文字、诙谐的气氛中让 ZK 的知识“钻”进你聪明的大脑。本教程是开放式：开源、协作，所以不管你是新手还是老司机，我们都希望你可以**加入到本教程的贡献中，一起让这个教程变得更好**：
 
@@ -243,7 +246,7 @@ client.getChildren("/更新视频", new Watcher() {
 
 关于 ZK 客户端的操作大致就这么几种，限于篇幅我也无法一一举例，本系列文章目的也不是作为官方文档的翻译，重要的还是能激发出大家对于技术的热情，剩下的那些使用情况就当我给大家的课后练习题吧～关于 ZK 的基本操作就讲完了。
 
-![img](./images/9.gif)
+![](./images/9.gif)
 
 
 
