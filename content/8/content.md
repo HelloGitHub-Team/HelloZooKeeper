@@ -14,7 +14,10 @@ ZK 在实际开发工作中经常会用见到，算的上是吃饭的家伙了�
 
 > 项目地址：https://github.com/HelloGitHub-Team/HelloZooKeeper
 
-前一篇文章我们介绍了 ZK 是如何进行持久化的，这章我们将正式学习 Follower 或 Observer 是如何在选举之后和 Leader 进行数据同步的
+前一篇文章我们介绍了 ZK 是如何进行持久化的，这章我们将正式学习 Follower 或 Observer 是如何在选举之后和 Leader 进行数据同步的。
+
+![](./images/4.png)
+
 
 ## 一、选举完成
 
