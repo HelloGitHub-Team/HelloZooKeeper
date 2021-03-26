@@ -41,11 +41,11 @@ dataLogDir=/tmp/zookeeper/log
 /tmp
 └── zookeeper
     ├── snapshot
-    		└── version-2
-    				└── ...
+    	└── version-2
+    		└── ...
     └── log
-    		└── version-2
-    				└── ...
+    	└── version-2
+    		└── ...
 ```
 
 ## 二、文件的创建和写入
@@ -60,8 +60,8 @@ log 文件名的格式是这样 `log.{zxid}` zxid 对应当时创建该文件时
 /tmp
 └── zookeeper
     └── log
-    		└── version-2
-    				└── log.0
+    	└── version-2
+    		└── log.0
 ```
 
 这个 `log.0` 文件创建的时机你也可以简单的理解为当服务端收到第一个写请求的时候，而且当创建完成后，并不能直接将数据写入，而是要先写一些文件头的字段，比如大名鼎鼎的魔数，版本号等元信息。
@@ -89,8 +89,8 @@ snapshot 文件名的格式是这样 `snapshot.{zxid}` zxid 对应当是创建�
 /tmp
 └── zookeeper
     └── snapshot
-    		└── version-2
-    				└── snapshot.0
+    	└── version-2
+    		└── snapshot.0
 ```
 
 而关于是否快照（图中中间区域粉色部分“是否快照”），之前有简单介绍过是和随机数有关，这次我们深入了解下。
@@ -116,7 +116,7 @@ snapshot 和 log 还有个不同的地方就是，snapshot 文件 ZK 提供了�
 和 log 文件一样，也要先记一些文件的头部字段，而 snapshot 文件的魔数是 ZKSN（4 个字节），版本号固定为 2（4 个字节），还要记录一个 dbId 固定为 -1（8 个字节） （当前没用，可能之后会派用处吧），所以前 16 个字节是固定这样的：
 
 ```
- Z K S N        2								 -1
+ Z K S N        2				 -1
 5A4B534E 00000002 FFFFFFFF FFFFFFFF
 ```
 
@@ -132,17 +132,17 @@ snapshot 和 log 还有个不同的地方就是，snapshot 文件 ZK 提供了�
 /tmp
 └── zookeeper
     ├── snapshot
-    		└── version-2
-    				└── snapshot.5
-    				└── snapshot.37
-    				└── snapshot.100
+    	└── version-2
+    		└── snapshot.5
+    		└── snapshot.37
+    		└── snapshot.100
     └── log
-    		└── version-2
-    				└── log.0
-    				└── log.6
-    				└── log.38
-    				└── log.90
-    				└── log.108
+    	└── version-2
+    		└── log.0
+    		└── log.6
+    		└── log.38
+    		└── log.90
+    		└── log.108
 ```
 
 我这里例子中的文件名的后缀数字是我随便举例只是为了说明恢复的过程，实际未必是这样，切记。
