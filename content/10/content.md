@@ -270,21 +270,37 @@ server.2=127.0.0.1:2887:3887
 
 ### 1.4 源码阅读指北
 
-- 配置相关，`QuorumPeerConfig`
+- 服务端启动，集群 `QuorumPeerMain#main`，单机 `ZooKeeperServerMain#main`
+- 客户端 `ZooKeeper`
+- 解析配置相关，`QuorumPeerConfig#parse`
 - 内存模型（小红本）`DataTree`
-- 回调通知（小黄本）`IWatchManager`
-- 选举 `FastLeaderElection`
-- Leader 节点 `LeaderZooKeeperServer`
-- Follower 节点 `FollowerZooKeeperServer`
-- Observer 节点 `ObserverZooKeeperServer`
+- 回调通知（小黄本）`IWatchManager` 查看该接口实现
+  - 默认实现 `WatchManager`
+  - 优化方案 `WatchManagerOptimized`
+- 选举 `FastLeaderElection#lookForLeader`
+- 服务端实例，设置流水线 `setupRequestProcessors` 方法
+  - Leader 节点 `LeaderZooKeeperServer`
+  - Follower 节点 `FollowerZooKeeperServer`
+  - Observer 节点 `ObserverZooKeeperServer`
 - 各个流水线员工 `RequestProcessor` 查看该接口的实现
 - 持久化 log `FileTxnLog`，snapshot `FileSnap`
-- 会话管理 `SessionImpl`
+- 会话管理 `SessionTrackerImpl#run`
 - 协议 `Record` 查看该接口的实现
 
-### 1.5 小结
+### 1.5 源码阅读心得
 
-我用一些图文的篇幅介绍了如何在本地调试 ZK 源码，我本地的环境是 Mac，用的 IDE 是 idea，如果你的环境或者工具和我不一样，碰到了困难的话，也可以给我们留言哦～
+阅读大型项目的源码一定是一个费时费心费力的工作，我这里也讲一下我阅读 ZK 源码的心得：
+
+- 不要死抠细节！大型项目的源码数量通常比较多，如果盯着逻辑中的每一个细节，就会迷失在源码的汪洋大海中。
+- 通常阅读源码都要带着一个目的。例如：ZK 是怎么进行协议转换的，ZK 是怎么选举的等等。有了目的以后，看相关源码是要选择性的忽略一些其他不相关的细节，可以通过方法名或者注释，来对具体的代码块先有一个感性的认识。
+- 碰到读不懂的地方，可以先去网上看看有没有人写过类似的博客，站在巨人的肩膀上，很可能别人一点你就通了。
+- 在 ZK 中一般间接或者直接继承 `ZooKeeperThread` 都是线程对象，主要逻辑可以查看 `run` 方法。
+- 任何一个类重要的属性肯定是在成员字段中，通过查看成员字段是可以大致推测出该类背后的数据结构。
+- 成员属性中如果有阻塞队列的字段，大概率会是生产者-消费者模式的体现，可以重点关注该阻塞队列的使用，何时放入以及取出元素。
+
+### 1.6 小结
+
+我用一些图文的篇幅介绍了如何在本地调试 ZK 源码，以及如何科学的阅读源码。我本地的环境是 Mac，用的 IDE 是 idea，如果你的环境或者工具和我不一样，碰到了困难的话，也可以给我们留言哦～
 
 
 ## 二、ZK 中应用到的设计模式
@@ -347,7 +363,7 @@ return new CheckedInputStream(is, new Adler32());
 
 ## 三、总结
 
-今天我讲了如何直接从 ZK 源码 DEBUG，介绍了一些 ZK 中用到的设计模式。
+今天我讲了如何直接从 ZK 源码 DEBUG，介绍了一些 ZK 中用到的设计模式，大家有阅读源码问题的话，欢迎给我留言哦
 
 下一期介绍 **ZK 的高级用法纯实战**，期待一下吧～
 
