@@ -552,8 +552,8 @@ Grafana 天然支持了 Prometheus 的数据源，可以直接添加
 
 使用命令行操作 ZK 太麻烦了，所以可视化就很有必要了，下面推荐几个不错的可视化客户端，有的是本地客户端，有的是 Web 服务，大家按需获取吧～
 
-- PrettyZoo：https://github.com/vran-dev/PrettyZoo，可视化 GUI 客户端，各个平台都有安装文件，需要连接 ZK 服务端的时候，手边有这样一个工具还是很方便的
-- zkdash：https://github.com/ireaderlab/zkdash，JavaScript + Python 可视化 Web 客户端，是个可以直接运行的 Web 服务，缺点是 Python2.7 开发的，如果不需要二次开发的话就没什么问题
-- zoonavigator-web：https://github.com/elkozmon/zoonavigator-web，TypeScript 编写的可视化 Web 客户端，是个可以直接运行的 Web 服务
-- visual-zookeeper：https://github.com/ghostg00/visual-zookeeper，Electron + React 编写的客户端
+- PrettyZoo：[https://github.com/vran-dev/PrettyZoo](https://github.com/vran-dev/PrettyZoo)，可视化 GUI 客户端，各个平台都有安装文件，需要连接 ZK 服务端的时候，手边有这样一个工具还是很方便的
+- zkdash：[https://github.com/ireaderlab/zkdash](https://github.com/ireaderlab/zkdash)，JavaScript + Python 可视化 Web 客户端，是个可以直接运行的 Web 服务，缺点是 Python2.7 开发的，如果不需要二次开发的话就没什么问题
+- zoonavigator-web：[https://github.com/elkozmon/zoonavigator-web](https://github.com/elkozmon/zoonavigator-web)，TypeScript 编写的可视化 Web 客户端，是个可以直接运行的 Web 服务
+- visual-zookeeper：[https://github.com/ghostg00/visual-zookeeper](https://github.com/ghostg00/visual-zookeeper)，Electron + React 编写的客户端
 
