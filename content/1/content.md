@@ -223,6 +223,8 @@ Docker 由于不是本系列文章的重点，所以这里就点到为止，有�
   - node-zookeeper，GitHub 地址：[https://github.com/yfinkelstein/node-zookeeper](https://github.com/yfinkelstein/node-zookeeper)
 - Ruby
   - zk，GitHub 地址：[https://github.com/zk-ruby/zk](https://github.com/zk-ruby/zk)
+- .NET
+  - ZooKeeperNetEx，GitHub 地址：[https://github.com/shayhatsor/zookeeper](https://github.com/shayhatsor/zookeeper)
 
 你可以看到上面的客户端都是在开源社区 GitHub 上！这就是开源的力量！这就是社区的力量！
 
