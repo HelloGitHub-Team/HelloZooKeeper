@@ -376,3 +376,5 @@ LOOKING
 老规矩，如果你有任何对文章中的疑问也可以是建议或者是对 ZK 原理部分的疑问，欢迎来仓库中提 issue 给我们，或者来语雀话题讨论。
 
 > 地址：https://www.yuque.com/kaixin1002/yla8hz 
+
+[传送门：7. ZK 的持久化介绍](../7/content.md)

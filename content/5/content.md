@@ -419,3 +419,5 @@ ZKr～老规矩～
 > 地址：https://www.yuque.com/kaixin1002/yla8hz 
 
 老哥们转评赞安排一下好吗，ZKr～
+
+[传送门：6. 集群选举流程](../6/content.md)

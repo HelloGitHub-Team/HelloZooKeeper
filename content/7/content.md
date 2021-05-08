@@ -172,3 +172,5 @@ snapshot 和 log 还有个不同的地方就是，snapshot 文件 ZK 提供了�
 今天的内容还是比较简单的，为我们下一篇文章打好了基础～下一篇我们开始介绍之前选举中没有介绍的内容：选举完成后，Follower 和 Observer 是如何同 Leader 同步数据的？
 
 ![](./images/6.gif)
+
+[传送门：8. 集群间同步数据以及 ACL 介绍](../8/content.md)

@@ -123,3 +123,5 @@ Hi，这里是 HelloGitHub 推出的 HelloZooKeeper 系列，**免费开源、�
 答应我从今天起 ZKr 起来，好吗～
 
 <img src="./images/11.gif" style="zoom:67%;" />
+
+[传送门：4. 内存模型和回调通知](../4/content.md)

@@ -435,5 +435,5 @@ ZK 服务端会维护一个从 1 开始的数字，收到一个新的 ACL 会同
 
 <img src="./images/25.gif" style="zoom:50%;" />
 
-
+[传送门：9. ZK 的会话介绍](../9/content.md)
 

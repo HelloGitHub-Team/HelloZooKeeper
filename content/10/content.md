@@ -368,3 +368,5 @@ return new CheckedInputStream(is, new Adler32());
 下一期介绍 **ZK 的高级用法纯实战**，期待一下吧～
 
 ![](./images/13.gif)
+
+[传送门：11. 高级功能实战](../11/content.md)

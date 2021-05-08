@@ -23,7 +23,7 @@ HelloZooKeeper 内容涵盖**最基础的安装使用**到背后**原理和源�
 
 ## 目录
 
-首发于「HelloGitHub」公众号，[点击查看全](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5MzYyNzQ0MQ==&action=getalbum&album_id=1709315979568037891&scene=173&from_msgid=2247503979&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+首发于「HelloGitHub」公众号，[点击查看全部系列文章](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5MzYyNzQ0MQ==&action=getalbum&album_id=1709315979568037891&scene=173&from_msgid=2247503979&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
 
 0. [开篇：免费开源的趣讲 ZooKeeper 教程](./content/0/content.md)
 1. [ZooKeeper 介绍与安装](./content/1/content.md)
