@@ -112,12 +112,12 @@ client.create("/更新视频/跳舞/20201101", "这是Data，既可以记录一�
 最后的 `CreateMode.PERSISTENT` 代表当前节点是一个持久类型的节点，`3.6.2` 中一共有 7 种类型，下面列出并且给出简单解释：
 
 ```java
-PERSISTENT											// 持久节点，一旦创建成功不会被删除，除非客户端主动发起删除请求
-PERSISTENT_SEQUENTIAL 					// 持久顺序节点，会在用户路径后面拼接一个不会重复的字增数字后缀，其他同上
-EPHEMERAL												// 临时节点，当创建该节点的客户端链接断开后自动被删除
-EPHEMERAL_SEQUENTIAL						// 临时顺序节点，基本同上，也是增加一个数字后缀
-CONTAINER												// 容器节点，一旦子节点被删除完就会被服务端删除
-PERSISTENT_WITH_TTL							// 带过期时间的持久节点，带有超时时间的节点，如果超时时间内没有子节点被创建，就会被删除
+PERSISTENT			// 持久节点，一旦创建成功不会被删除，除非客户端主动发起删除请求
+PERSISTENT_SEQUENTIAL		// 持久顺序节点，会在用户路径后面拼接一个不会重复的字增数字后缀，其他同上
+EPHEMERAL			// 临时节点，当创建该节点的客户端链接断开后自动被删除
+EPHEMERAL_SEQUENTIAL		// 临时顺序节点，基本同上，也是增加一个数字后缀
+CONTAINER			// 容器节点，一旦子节点被删除完就会被服务端删除
+PERSISTENT_WITH_TTL		// 带过期时间的持久节点，带有超时时间的节点，如果超时时间内没有子节点被创建，就会被删除
 PERSISTENT_SEQUENTIAL_WITH_TTL	// 带过期时间的持久顺序节点，基本同上，多了一个数字后缀
 ```
 
