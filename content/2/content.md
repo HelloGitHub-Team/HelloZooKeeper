@@ -113,7 +113,7 @@ client.create("/更新视频/跳舞/20201101", "这是Data，既可以记录一�
 
 ```java
 PERSISTENT			// 持久节点，一旦创建成功不会被删除，除非客户端主动发起删除请求
-PERSISTENT_SEQUENTIAL		// 持久顺序节点，会在用户路径后面拼接一个不会重复的字增数字后缀，其他同上
+PERSISTENT_SEQUENTIAL		// 持久顺序节点，会在用户路径后面拼接一个不会重复的自增数字后缀，其他同上
 EPHEMERAL			// 临时节点，当创建该节点的客户端链接断开后自动被删除
 EPHEMERAL_SEQUENTIAL		// 临时顺序节点，基本同上，也是增加一个数字后缀
 CONTAINER			// 容器节点，一旦子节点被删除完就会被服务端删除
